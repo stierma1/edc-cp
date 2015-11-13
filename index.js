@@ -4,7 +4,7 @@ var Worker = require("basic-distributed-computation").Worker;
 
 class Copy extends Worker {
   constructor(parent){
-    super("mv", parent);
+    super("cp", parent);
   }
 
   work(req, inputKey, outputKey){
